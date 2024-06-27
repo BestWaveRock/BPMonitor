@@ -11,7 +11,7 @@ import SwiftUI
 struct BPMoniatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(ViewModel(viewController: ViewController()))
         }
     }
 }
